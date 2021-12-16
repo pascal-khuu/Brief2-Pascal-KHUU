@@ -1,0 +1,132 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+    body {
+        width: 90%;
+        margin: 0 auto;
+        background-color: white;
+    }
+    /*Header*/
+    
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header>img {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header>nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header>nav>ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header>:last-child {
+        margin-left: auto;
+    }
+    
+    header>nav>ul>li {
+        margin: 0 3px 0 3px;
+    }
+    /* graphical charter*/
+    
+    h1,
+    label {
+        color: black;
+        font-family: 'Roboto';
+        font-weight: 500;
+    }
+    
+    a {
+        color: black;
+        font-family: 'Roboto';
+        font-weight: 300;
+    }
+    
+    a:hover {
+        color: red;
+    }
+    
+    input {
+        border-color: black;
+    }
+    
+    li {
+        list-style: none;
+    }
+    /*Form*/
+    
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    input {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    button {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    hr {
+        color: red;
+    }
+    /*Footer*/
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer>nav {
+        display: flex;
+        flex-direction: row;
+        /* background-color: yellowgreen; */
+    }
+    
+    footer>nav>ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    footer>nav>ul>li {
+        margin: 0 10px 0 10px;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    @media only screen and (max-width:800px) {
+        body {
+            min-width: 600px;
+        }
+        header {
+            width: 100%;
+        }
+        form {
+            width: 100%;
+        }
+        footer {
+            width: 100%;
+        }
+        header>img {
+            width: 30%;
+            height: 30%;
+        }
+    }
+    /* @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {} */
