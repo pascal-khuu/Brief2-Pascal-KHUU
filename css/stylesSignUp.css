@@ -11,11 +11,6 @@
         flex-direction: row;
     }
     
-    header>img {
-        display: flex;
-        flex-direction: row;
-    }
-    
     header>nav {
         display: flex;
         flex-direction: row;
@@ -110,13 +105,18 @@
     p {
         text-align: center;
     }
+    /*Responsive*/
     
-    @media only screen and (max-width:800px) {
+    @media only screen and (max-width:1024px) {
         body {
-            min-width: 600px;
+            min-width: 200px;
         }
         header {
             width: 100%;
+        }
+        header>img {
+            width: 30%;
+            height: 30%;
         }
         form {
             width: 100%;
@@ -124,9 +124,4 @@
         footer {
             width: 100%;
         }
-        header>img {
-            width: 30%;
-            height: 30%;
-        }
     }
-    /* @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {} */
