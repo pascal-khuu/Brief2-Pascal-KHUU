@@ -1,0 +1,90 @@
+ header {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ body {
+     width: 90%;
+     margin: 0 auto;
+     background-color: white;
+ }
+ 
+ header>nav {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ header>nav>ul {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ header>:last-child {
+     margin-left: auto;
+ }
+ 
+ header>nav>ul>li {
+     margin: 0 3px 0 3px;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ #team,
+ #team>* {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ #workplace,
+ #workplace>* {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ hr {
+     color: red;
+ }
+ 
+ footer {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ footer>nav {
+     display: flex;
+     flex-direction: row;
+     /* background-color: yellowgreen; */
+ }
+ 
+ footer>nav>ul {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ footer>nav>ul>li {
+     margin: 0 10px 0 10px;
+ }
+ 
+ @media only screen and (max-width:1024px) {
+     header {
+         width: 100%
+     }
+     #team {
+         flex-direction: column;
+     }
+     #workplace {
+         flex-direction: column-reverse;
+     }
+     header>img {
+         width: 30%;
+         height: 30%;
+     }
+     main {
+         width: 100%;
+     }
+     footer {
+         width: 100%;
+     }
+ }
