@@ -67,6 +67,10 @@ footer>nav>ul>li {
     form {
         flex-direction: column;
     }
+    #selection {
+        display: flex;
+        flex-direction: column;
+    }
     header>img {
         width: 30%;
         height: 30%;

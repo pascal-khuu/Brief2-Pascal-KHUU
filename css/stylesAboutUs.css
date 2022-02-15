@@ -37,6 +37,14 @@
      flex-direction: row;
  }
  
+ #loremteam {
+     margin-left: 2%;
+ }
+ 
+ #loremworkplace {
+     margin-right: 2%;
+ }
+ 
  #workplace,
  #workplace>* {
      display: flex;
