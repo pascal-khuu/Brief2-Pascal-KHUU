@@ -8,6 +8,9 @@
      margin: 0 auto;
      background-color: white;
  }
+ a:hover {
+    color: red;
+}
  
  header>nav {
      display: flex;
@@ -75,6 +78,21 @@
      margin: 0 10px 0 10px;
  }
  
+ div>div>img{
+    height: 200px;
+}
+
+h1,h2 label {
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+a,p {
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
  @media only screen and (max-width:1024px) {
      header {
          width: 100%
@@ -85,9 +103,8 @@
      #workplace {
          flex-direction: column-reverse;
      }
-     header>img {
-         width: 30%;
-         height: 30%;
+     div>div>img{
+         height:initial;
      }
      main {
          width: 100%;
@@ -95,4 +112,6 @@
      footer {
          width: 100%;
      }
+
+    
  }
