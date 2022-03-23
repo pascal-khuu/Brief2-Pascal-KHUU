@@ -3,12 +3,14 @@
  header {
      display: flex;
      flex-direction: row;
+     
  }
  
  body {
      width: 90%;
      margin: 0 auto;
      background-color: white;
+     
  }
  a:hover {
     color: red;
@@ -57,8 +59,12 @@
  }
  
  hr {
-     color: red;
+    border-color: red;
  }
+
+ .copyright {
+    color:red;
+}
  
  footer {
      display: flex;
@@ -74,10 +80,14 @@
  footer>nav>ul {
      display: flex;
      flex-direction: row;
+     margin:0;
+     margin-bottom: 2%;
+     padding: 0;
  }
  
  footer>nav>ul>li {
-     margin: 0 10px 0 10px;
+     margin: 0 50px 0 0;
+     
  }
  
  div>div>img{
@@ -95,9 +105,16 @@ a,p {
     font-family: 'Roboto';
     font-weight: 300;
 }
- @media only screen and (max-width:1024px) {
+input{
+    border-color:black;
+}
+
+footer>p {
+    text-align: center;
+}
+ @media only screen and (max-width:600px) {
      header {
-         width: 100%
+         width: 100%;
      }
      #team {
          flex-direction: column;
@@ -113,6 +130,9 @@ a,p {
      }
      footer {
          width: 100%;
+     }
+     body{
+        min-width: 650px;
      }
 
     

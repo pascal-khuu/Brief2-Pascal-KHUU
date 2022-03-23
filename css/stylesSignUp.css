@@ -78,19 +78,25 @@
     }
     
     hr {
-        color: red;
+        border-color: red;
+    }
+
+    .copyright {
+        color:red;
     }
     /*Footer*/
     
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    footer>nav {
+    footer>nav>ul {
         display: flex;
         flex-direction: row;
-        /* background-color: yellowgreen; */
+        margin:0;
+        margin-bottom: 2%;
+        padding: 0;
+    }
+    
+    footer>nav>ul>li {
+        margin: 0 10px 0 0;
+        
     }
     
     footer>nav>ul {
@@ -99,7 +105,7 @@
     }
     
     footer>nav>ul>li {
-        margin: 0 10px 0 10px;
+        margin: 0 50px 0 10px;
     }
     
     p {
@@ -107,7 +113,7 @@
     }
     /*Responsive*/
     
-    @media only screen and (max-width:1024px) {
+    @media only screen and (max-width:600px) {
         body {
             min-width: 200px;
         }

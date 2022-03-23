@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
+.jobs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    width:100%;
+}
+
+
+
 header {
     display: flex;
     flex-direction: row;
@@ -7,12 +17,12 @@ header {
 
 body {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto; 
     background-color: white;
 }
 a:hover {
     color: red;
-}
+} 
 
 header>nav {
     display: flex;
@@ -36,41 +46,57 @@ li {
     list-style: none;
 }
 
-hr {
-    color: red;
+hr{
+    border-color: red;
 }
 
-form {
+.copyright {
+    color:red;
+}
+
+ form {
+    width:100%;
     display: flex;
     flex-direction: row;
 }
 
-form>table>tr>td{
-    margin-right: 10px;
-}
-form>table>tr>td:last-child{
-    margin-right: 0;
-}
+
 #footer {
     display: flex;
     flex-direction: column;
 }
 
+#teams,#locationdiv,#datediv {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width:30%;
+    
+    
+    } 
+
+
 footer>nav {
     display: flex;
     flex-direction: row;
-    /* background-color: yellowgreen; */
+    
 }
-
 footer>nav>ul {
     display: flex;
     flex-direction: row;
+    margin:0;
+    margin-bottom: 2%;
+    padding: 0;
 }
 
 footer>nav>ul>li {
-    margin: 0 10px 0 10px;
+    margin: 0 50px 0 0;
+    
 }
 
+footer>p {
+    text-align: center;
+}
 
 h1,h2,h3,h4,label {
         color: black;
@@ -83,18 +109,28 @@ h1,h2,h3,h4,label {
         font-family: 'Roboto';
         font-weight: 300;
     }
-@media only screen and (max-width:1024px) {
+
+    input{
+        border-color:black;
+    }
+ @media only screen and (max-width:600px) {
     header {
-        width: 100%
+        width: 100%;
+     
     }
-    form {
+    .jobs {
         flex-direction: column;
+        
     }
-    #selection {
-        display: flex;
-        flex-direction: column;
+    #teams,#locationdiv {
+       margin-bottom:2%;
+       width:100%;
     }
    
+    #datediv{
+        width:30%;
+        white-space: nowrap;
+    }
     main {
         width: 100%;
     }
